@@ -83,7 +83,6 @@
     <AndroidResource Include="Resources\mipmap-xxxhdpi\icon.png" />
     <AndroidResource Include="Resources\mipmap-xxxhdpi\launcher_foreground.png" />
   </ItemGroup>
-  <ItemGroup />
   <ItemGroup>
     <ProjectReference Include="..\loginRefactor\loginRefactor.csproj">
       <Project>{8CA3F203-9465-4872-A4A6-9BD4C1CFAAFB}</Project>

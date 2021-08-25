@@ -5,16 +5,19 @@
              BackgroundColor="DarkRed"
              >
     <ContentPage.Content>
-        <StackLayout VerticalOptions="Center" Margin="20">
-            <Image Source="./logo.png"></Image>
-            <Label Text="LOGIN" TextColor="White" HorizontalOptions="Center" FontSize ="20" FontAttributes="Bold"></Label>
-            <Frame BackgroundColor="White"  HeightRequest="100" CornerRadius="20">
-                <StackLayout >
+      
+        <Grid ColumnDefinitions="*" RowDefinitions="10" Margin="20" >
+            <Image Source="./logo.png" Grid.Row="2" Grid.RowSpan="1"></Image>
+            <Label Text="LOGIN" TextColor="White" HorizontalOptions="Center" FontSize ="20" FontAttributes="Bold" Grid.Row="3" Grid.RowSpan="1" ></Label>
+            <Frame BackgroundColor="White"  CornerRadius="20" Grid.Row="4" Grid.RowSpan="2">
+                <StackLayout VerticalOptions="Center" >
                     <Entry x:Name ="nameEntry" Placeholder="Username" PlaceholderColor="Black"></Entry>
                     <Entry x:Name="passwordEntry" Placeholder="Password" IsPassword="True"  PlaceholderColor="Black"></Entry>
                 </StackLayout>
             </Frame>
-            <Button Text="Login" TextColor="DarkRed"  BackgroundColor="White"  FontAttributes="Bold" Command="" ></Button>
-        </StackLayout>
+            <Button Text="Login" TextColor="DarkRed"  BackgroundColor="White"  FontAttributes="Bold" Grid.Row="7" Grid.RowSpan="1" Margin="10"></Button>
+            <Label Text="Registrar" TextColor="White" Grid.Row="8" HorizontalOptions="Center" FontAttributes="Bold"></Label>
+        </Grid>
+        
     </ContentPage.Content>
 </ContentPage>
