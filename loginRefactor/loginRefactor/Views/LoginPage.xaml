@@ -11,12 +11,12 @@
             <Label Text="LOGIN" TextColor="White" HorizontalOptions="Center" FontSize ="20" FontAttributes="Bold" Grid.Row="3" Grid.RowSpan="1" ></Label>
             <Frame BackgroundColor="White"  CornerRadius="20" Grid.Row="4" Grid.RowSpan="2">
                 <StackLayout VerticalOptions="Center" >
-                    <Entry x:Name ="nameEntry" Placeholder="Username" PlaceholderColor="Black"></Entry>
-                    <Entry x:Name="passwordEntry" Placeholder="Password" IsPassword="True"  PlaceholderColor="Black"></Entry>
+                    <Entry  Placeholder="Username" PlaceholderColor="Black"></Entry>
+                    <Entry  Placeholder="Password" IsPassword="True"  PlaceholderColor="Black"></Entry>
                 </StackLayout>
             </Frame>
             <Button Text="Login" TextColor="DarkRed"  BackgroundColor="White"  FontAttributes="Bold" Grid.Row="7" Grid.RowSpan="1" Margin="10"></Button>
-            <Label Text="Registrar" TextColor="White" Grid.Row="8" HorizontalOptions="Center" FontAttributes="Bold"></Label>
+            <Label Text="SignUp" TextColor="White" Grid.Row="8" HorizontalOptions="Center" FontAttributes="Bold"></Label>
         </Grid>
         
     </ContentPage.Content>
