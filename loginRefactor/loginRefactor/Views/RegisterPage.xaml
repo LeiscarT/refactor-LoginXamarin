@@ -9,13 +9,13 @@
             <Label Text="REGISTER" TextColor="White" HorizontalOptions="Center" FontSize ="20" FontAttributes="Bold" Grid.Row="3" Grid.RowSpan="1" ></Label>
             <Frame BackgroundColor="White" Grid.Row="1" Grid.RowSpan="11" VerticalOptions="Center" CornerRadius="20">
                 <StackLayout VerticalOptions="Center">
-                    <Entry Placeholder="Name" PlaceholderColor="Black"></Entry>
-                    <Entry Placeholder="Username" PlaceholderColor="Black"></Entry>
-                    <Entry Placeholder="Password" PlaceholderColor="Black"></Entry>
-                    <Entry Placeholder="Confirm Password" PlaceholderColor="Black"></Entry>
+                    <Entry Placeholder="Name" PlaceholderColor="Black"  Text="{Binding User.Name}"></Entry>
+                    <Entry Placeholder="Username" PlaceholderColor="Black" Text="{Binding User.Username}"></Entry>
+                    <Entry Placeholder="Password" IsPassword ="True" PlaceholderColor="Black" Text="{Binding User.Password}"></Entry>
+                    <Entry Placeholder="Confirm Password" IsPassword ="True" PlaceholderColor="Black" Text="{Binding User.ConfirmPass}"></Entry>
                 </StackLayout>
             </Frame>
-            <Button Text="Sign Up" TextColor="DarkRed"  BackgroundColor="White"  FontAttributes="Bold" Grid.Row="9" Grid.RowSpan="2" Margin="25"></Button>
+            <Button Text="Sign Up" TextColor="DarkRed"  BackgroundColor="White"  FontAttributes="Bold" Grid.Row="9" Grid.RowSpan="2" Margin="25" Command="{Binding Command}}"></Button>
         </Grid>
     </ContentPage.Content>
 </ContentPage>
