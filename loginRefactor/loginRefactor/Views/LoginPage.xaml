@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:viewmodels="clr-namespace:loginRefactor.ViewModels" 
              x:Class="loginRefactor.Views.LoginPage"
              BackgroundColor="DarkRed"
              >
@@ -11,12 +11,14 @@
             <Label Text="LOGIN" TextColor="White" HorizontalOptions="Center" FontSize ="20" FontAttributes="Bold" Grid.Row="3" Grid.RowSpan="1" ></Label>
             <Frame BackgroundColor="White"  CornerRadius="20" Grid.Row="4" Grid.RowSpan="2">
                 <StackLayout VerticalOptions="Center" >
-                    <Entry  Placeholder="Username" PlaceholderColor="Black"></Entry>
-                    <Entry  Placeholder="Password" IsPassword="True"  PlaceholderColor="Black"></Entry>
+                    <Entry Text="{Binding User.Username}" Placeholder="Username" PlaceholderColor="Black"></Entry>
+                    <Entry Text="{Binding User.Password}" Placeholder="Password" IsPassword="True"  PlaceholderColor="Black"></Entry>
+                    <Entry Text= "{Binding User.Username}"  Placeholder="H"></Entry>
                 </StackLayout>
             </Frame>
-            <Button Text="Login" TextColor="DarkRed"  BackgroundColor="White"  FontAttributes="Bold" Grid.Row="7" Grid.RowSpan="1" Margin="10"></Button>
-            <Label Text="SignUp" TextColor="White" Grid.Row="8" HorizontalOptions="Center" FontAttributes="Bold"></Label>
+            <Button Text="Login" TextColor="DarkRed"  BackgroundColor="White"  FontAttributes="Bold" Grid.Row="7" Grid.RowSpan="1" Margin="10" Command="{Binding Command}"></Button>
+            <Button Text="SignUp" TextColor="White"  BackgroundColor="DarkRed"  FontAttributes="Bold" Grid.Row="8"  Command="{Binding NavigateCommand}"></Button>
+
         </Grid>
         
     </ContentPage.Content>

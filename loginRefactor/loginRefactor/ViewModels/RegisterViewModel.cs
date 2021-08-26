@@ -8,7 +8,7 @@ namespace loginRefactor.ViewModels
     {
         public RegisterViewModel()
         {
-
+          
         }
     }
 }
