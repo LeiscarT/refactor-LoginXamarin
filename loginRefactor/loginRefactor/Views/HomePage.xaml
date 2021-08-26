@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="loginRefactor.Views.HomePage"
+           
+             >
+    <ContentPage.Content>
+        
+        <Grid RowDefinitions="5" ColumnDefinitions="2" Margin="10" BackgroundColor="White">
+            
+            <Label Text="Discovery" VerticalOptions="Center" 
+                   HorizontalOptions="Center" FontAttributes="Bold" 
+                   FontSize="30" Grid.Row="1" Grid.Column="1" 
+                   Grid.ColumnSpan="2" TextColor="DarkRed"></Label>
+           
+            <Grid BackgroundColor ="Gray" Grid.Column="1" Grid.Row="2" Margin="8">
+                <Image Source="{Binding Beach.Image}"   HorizontalOptions ="Center"  VerticalOptions="Center"  ></Image>
+                <Label Text="{Binding Beach.Title}" HorizontalOptions="Center" VerticalOptions="End" Margin="15"></Label>
+            </Grid>
+            <Grid BackgroundColor ="Gray" Grid.Row="2" Grid.Column="2" Margin="8">
+                <Image Source="{Binding Church.Image}" HorizontalOptions ="Center" VerticalOptions="Center" ></Image>
+                <Label Text="{Binding Church.Title}" HorizontalOptions="Center" VerticalOptions="End" Margin="15"></Label>
+            </Grid>
+            <Grid BackgroundColor ="Gray"  Grid.Row="3" Grid.Column="1" Margin="8">
+                <Image Source="{Binding River.Image}" HorizontalOptions ="Center" VerticalOptions="Center"></Image>
+                <Label Text="{Binding River.Title}" HorizontalOptions="Center" VerticalOptions="End" Margin="15"></Label>
+            </Grid>
+            <Grid BackgroundColor ="Gray" Grid.Row="3" Grid.Column="2" Margin="8">
+                <Image Source="{Binding Park.Image}" HorizontalOptions ="Center"  VerticalOptions="Center"></Image>
+                <Label Text="{Binding Park.Title}" HorizontalOptions="Center" VerticalOptions="End" Margin="15"></Label>
+            </Grid>
+            <Grid BackgroundColor ="Gray" Grid.Row="4" Grid.Column="1" Margin="8">
+                <Image Source="{Binding Hotel.Image}" HorizontalOptions ="Center"  VerticalOptions="Center"></Image>
+                <Label Text="{Binding Hotel.Title}" HorizontalOptions="Center" VerticalOptions="End" Margin="15"></Label>
+             </Grid>
+
+            <Grid BackgroundColor ="Gray" Grid.Row="4" Grid.Column="2" Margin="10">
+                <Image Source="{Binding FoodTruck.Image}"  HorizontalOptions ="Center" VerticalOptions="Center"></Image>
+                <Label Text="{Binding FoodTruck.Title}" HorizontalOptions="Center" VerticalOptions="End" Margin="15"></Label>
+            </Grid>
+        </Grid>
+        
+            
+    </ContentPage.Content>
+</ContentPage>

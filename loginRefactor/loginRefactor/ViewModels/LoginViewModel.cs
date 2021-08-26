@@ -39,6 +39,7 @@ namespace loginRefactor.ViewModels
             else
             {
                 await App.Current.MainPage.DisplayAlert("Bienvenido", $"Hola {User.Username}", "ok");
+                await App.Current.MainPage.Navigation.PushModalAsync(new HomePage());
             }
         }
 

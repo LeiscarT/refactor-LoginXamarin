@@ -11,7 +11,7 @@ namespace loginRefactor
         {
             InitializeComponent();
 
-            MainPage = new LoginPage();
+            MainPage = new HomePage();
         }
 
         protected override void OnStart()

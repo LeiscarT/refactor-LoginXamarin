@@ -5,7 +5,7 @@ using System.Text;
 
 namespace loginRefactor.Models
 {
-    public class Menu : INotifyPropertyChanged
+    public class Card : INotifyPropertyChanged
     {
         private string _title { get; set; }
         public string Title

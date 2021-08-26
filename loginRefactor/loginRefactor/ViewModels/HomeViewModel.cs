@@ -1,47 +1,54 @@
 ﻿using loginRefactor.Models;
 using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Text;
 using System.Windows.Input;
 using Xamarin.Forms;
 
 namespace loginRefactor.ViewModels
 {
-   public class HomeViewModel
+   public class HomeViewModel : INotifyPropertyChanged
     {
-        public Menu Beach { get; set; } = new Menu();
-        public Menu Church { get; set; } = new Menu();
-        public Menu River { get; set; } = new Menu();
-        public Menu Park { get; set; } = new Menu();
-        public Menu Hotel { get; set; } = new Menu();
-        public Menu FoodTruck { get; set; } = new Menu();
+       
+        public Card Beach { get; set; } = new Card();
+        public Card Church { get; set; } = new Card();
+        public Card River { get; set; } = new Card();
+        public Card Park { get; set; } = new Card();
+        public Card Hotel { get; set; } = new Card();
+        public Card FoodTruck { get; set; } = new Card();
 
-         ICommand Command { get; set; }
+        public event PropertyChangedEventHandler PropertyChanged;
+
+        ICommand Command { get; set; }
 
         public HomeViewModel()
         {
-            Command = new Command(OnInit);
-        } 
+
+            OnInit();
+        }
+
+        
 
         private void OnInit()
         {
             Beach.Title = "Beach";
-            Beach.Image = "/.beach.png";
+            Beach.Image = "beach.png";
 
             Church.Title = "Church";
-            Church.Image = "/.church.png";
+            Church.Image = "church.png";
 
             River.Title = "River";
-            River.Image = "/.river.png";
+            River.Image = "river.png";
 
             Park.Title = "Park";
-            Park.Image = "/.park.png";
+            Park.Image = "park.png";
 
             Hotel.Title = "Hotel";
-            Hotel.Image = "/.hotel.png";
+            Hotel.Image = "hotel.png";
 
-            FoodTruck.Title = "Beach";
-            FoodTruck.Image = "/.beach.png";
+            FoodTruck.Title = "FoodTruck";
+            FoodTruck.Image = "foodTruck.png";
         }
 
     }
