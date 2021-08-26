@@ -13,7 +13,6 @@
                 <StackLayout VerticalOptions="Center" >
                     <Entry Text="{Binding User.Username}" Placeholder="Username" PlaceholderColor="Black"></Entry>
                     <Entry Text="{Binding User.Password}" Placeholder="Password" IsPassword="True"  PlaceholderColor="Black"></Entry>
-                    <Entry Text= "{Binding User.Username}"  Placeholder="H"></Entry>
                 </StackLayout>
             </Frame>
             <Button Text="Login" TextColor="DarkRed"  BackgroundColor="White"  FontAttributes="Bold" Grid.Row="7" Grid.RowSpan="1" Margin="10" Command="{Binding Command}"></Button>
