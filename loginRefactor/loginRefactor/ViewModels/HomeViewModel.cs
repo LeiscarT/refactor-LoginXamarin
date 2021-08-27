@@ -16,7 +16,7 @@ namespace loginRefactor.ViewModels
         public Card River { get; set; } = new Card();
         public Card Park { get; set; } = new Card();
         public Card Hotel { get; set; } = new Card();
-        public Card FoodTruck { get; set; } = new Card();
+        public Card Shopping { get; set; } = new Card();
 
         public event PropertyChangedEventHandler PropertyChanged;
 
@@ -47,8 +47,8 @@ namespace loginRefactor.ViewModels
             Hotel.Title = "Hotel";
             Hotel.Image = "hotel.png";
 
-            FoodTruck.Title = "FoodTruck";
-            FoodTruck.Image = "foodTruck.png";
+            Shopping.Title = "Shopping";
+            Shopping.Image = "shopping.png";
         }
 
     }
