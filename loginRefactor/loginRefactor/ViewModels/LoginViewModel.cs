@@ -19,7 +19,7 @@ namespace loginRefactor.ViewModels
         public event PropertyChangedEventHandler PropertyChanged;
 
         public LoginViewModel() {
-            Command = new Command(OnPushButton);
+            Command = new Command(OnLogin);
 
             NavigateCommand = new Command(async () =>
             {
@@ -30,7 +30,7 @@ namespace loginRefactor.ViewModels
          }      
         
 
-        private async void OnPushButton()
+        private async void OnLogin()
         {
             if (string.IsNullOrEmpty(User.Username) || string.IsNullOrEmpty(User.Password))
             {

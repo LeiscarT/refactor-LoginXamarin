@@ -16,10 +16,10 @@ namespace loginRefactor.ViewModels
         public ICommand Command { get; }
         public RegisterViewModel()
         {
-            Command = new Command(OnPush);
+            Command = new Command(OnRegister);
         }
 
-        public async void OnPush()
+        public async void OnRegister()
         {
             
             if(User.Password != User.ConfirmPass){

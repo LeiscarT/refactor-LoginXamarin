@@ -25,12 +25,12 @@ namespace loginRefactor.ViewModels
         public HomeViewModel()
         {
 
-            OnInit();
+            OnInitialize();
         }
 
         
 
-        private void OnInit()
+        private void OnInitialize()
         {
             Beach.Title = "Beach";
             Beach.Image = "beach.png";

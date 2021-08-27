@@ -7,14 +7,14 @@ namespace loginRefactor.Models
 {
     public class Card : INotifyPropertyChanged
     {
-        private string _title { get; set; }
+        private string _title;
         public string Title
         {
             get { return _title; }
             set { _title = value; OnPropertyChanged(nameof(Title)); }
         }
 
-        private string _image { get; set; }
+        private string _image;
         public string Image
         {
             get { return _image; }
